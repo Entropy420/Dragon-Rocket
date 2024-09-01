@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +8,7 @@
   </head>
   <body class="bg-gray-800 text-gray-300">
     <header
-      class="sticky top-0 bg-orange-700 text-slate-200 shadow-lg shadow-gray-900"
+      class="sticky top-0 z-10 bg-orange-700 text-slate-200 shadow-lg shadow-gray-900"
     >
       <section
         class="mx-auto flex max-w-screen-lg items-center justify-between p-4"
@@ -34,10 +34,10 @@
     <main class="mx-auto max-w-screen-lg">
       <section
         id="hero"
-        class="mb-12 flex flex-col gap-8 p-4 text-center sm:mt-8 sm:flex-row-reverse sm:text-start"
+        class="mb-12 flex scroll-m-20 flex-col gap-8 p-4 text-center sm:mt-8 sm:flex-row-reverse sm:text-start"
       >
         <img
-          src="/public/Dragon Hero Image.png"
+          src="/public/Dragon-Hero.png"
           alt="Dragon on rocket"
           class="m-4 rounded-2xl bg-gray-700 sm:w-1/2 sm:bg-inherit"
         />
@@ -58,7 +58,7 @@
       </section>
       <hr class="mx-auto w-3/4" />
 
-      <section id="rockets" class="my-12 p-6">
+      <section id="rockets" class="my-12 scroll-m-20 p-6">
         <h2 class="mb-12 text-center text-3xl font-bold sm:text-4xl">
           🚀 OUR ROCKETS 🚀
         </h2>
@@ -67,42 +67,42 @@
           class="flex flex-col items-center gap-12 sm:flex-row sm:items-baseline sm:justify-between"
         >
           <article
-            class="flex w-[245px] flex-col items-center rounded-3xl bg-gray-700 pb-6"
+            class="flex w-[245px] flex-col items-center rounded-3xl bg-gray-700 pb-6 sm:w-[200px]"
           >
             <img
-              src="/public/Dragon Basic.png"
+              src="/public/Dragon-Basic.png"
               alt="Plus Dragon"
-              class="h-[600px] w-full rounded-t-3xl object-cover object-bottom"
+              class="h-[600px] w-full rounded-t-3xl object-cover object-bottom sm:h-[500px]"
             />
-            <h3 class="mt-4 text-2xl font-bold sm:text-3xl">Explorer</h3>
-            <p class="mt-2 text-center text-gray-400 sm:text-xl">
+            <h3 class="mt-4 text-2xl font-bold">Explorer</h3>
+            <p class="mt-2 text-center text-gray-400 sm:text-lg">
               Affordable Dragon
             </p>
           </article>
 
           <article
-            class="flex w-[245px] flex-col items-center rounded-3xl bg-gray-700 pb-6"
+            class="flex w-[245px] flex-col items-center rounded-3xl bg-gray-700 pb-6 sm:w-[200px]"
           >
             <img
-              src="/public/Dragon Plus.png"
+              src="/public/Dragon-Plus.png"
               alt="Plus Dragon"
-              class="h-[600px] w-full rounded-t-3xl object-cover object-bottom"
+              class="h-[600px] w-full rounded-t-3xl object-cover object-bottom sm:h-[500px]"
             />
-            <h3 class="mt-4 text-2xl font-bold sm:text-3xl">Adventurer</h3>
-            <p class="mt-2 text-center text-gray-400 sm:text-xl">
+            <h3 class="mt-4 text-2xl font-bold">Adventurer</h3>
+            <p class="mt-2 text-center text-gray-400 sm:text-lg">
               Best Selling Dragon
             </p>
           </article>
           <article
-            class="flex w-[245px] flex-col items-center rounded-3xl bg-gray-700 pb-6"
+            class="flex w-[245px] flex-col items-center rounded-3xl bg-gray-700 pb-6 sm:w-[200px]"
           >
             <img
-              src="/public/Dragon Premium.png"
+              src="/public/Dragon-Premium.png"
               alt="Premium Dragon"
-              class="h-[600px] w-full rounded-t-3xl object-cover object-bottom"
+              class="h-[600px] w-full rounded-t-3xl object-cover object-bottom sm:h-[500px]"
             />
-            <h3 class="mt-4 text-2xl font-bold sm:text-3xl">Infinity</h3>
-            <p class="mt-2 text-center text-gray-400 sm:text-xl">
+            <h3 class="mt-4 text-2xl font-bold">Infinity</h3>
+            <p class="mt-2 text-center text-gray-400 sm:text-lg">
               Our Quickest Dragon
             </p>
           </article>
@@ -112,8 +112,76 @@
 
       <section id="testimonials" class="my-12 p-6">
         <h2 class="mb-12 text-center text-3xl font-bold sm:text-4xl">
-          Testimonials
+          ⭐ Testimonials ⭐
         </h2>
+
+        <div class="flex flex-col gap-12 align-middle">
+          <article
+            class="relative w-full rounded-xl bg-gray-700 p-8 text-center"
+          >
+            <p class="text-sm italic sm:text-base">
+              <span
+                class="absolute left-[1rem] top-[1rem] scale-[3] font-normal text-orange-500 opacity-80"
+                >❝</span
+              >The view of Earth from dragon back? Unforgettable! Just make sure
+              to bring a fireproof suit. And earplugs. And maybe some dragon
+              treats. Highly recommend!
+              <span
+                class="absolute bottom-[.125rem] right-[1.5rem] scale-[3] text-orange-500 opacity-80"
+                >❞</span
+              >
+            </p>
+            <h3 class="mt-2 text-right text-xs font-bold">
+              — Astronaut Andy, now a proud dragon rider
+            </h3>
+          </article>
+
+          <article
+            class="relative w-full rounded-xl bg-gray-700 p-8 text-center"
+          >
+            <p class="text-sm italic sm:text-base">
+              <span
+                class="absolute left-[1rem] top-[1rem] scale-[3] font-normal text-orange-500 opacity-80"
+                >❝</span
+              >
+              I always wanted to be an astronaut, but I never thought I'd get
+              there on a dragon! The Dragon Rockets experience was out of this
+              world. 10/10 would fly again, just maybe with a different dragon.
+              <span
+                class="absolute bottom-[.125rem] right-[1.5rem] scale-[3] text-orange-500 opacity-80"
+                >❞</span
+              >
+            </p>
+            <h3 class="mt-2 text-right text-xs font-bold">
+              — Starstruck Susan, intergalactic explorer
+            </h3>
+          </article>
+
+          <article
+            class="relative w-full rounded-xl bg-gray-700 p-8 text-center"
+          >
+            <p class="text-sm italic sm:text-base">
+              <span
+                class="absolute left-[1rem] top-[1rem] scale-[3] font-normal text-orange-500 opacity-80"
+                >❝</span
+              >
+              I booked a trip with Dragon Rockets thinking it was a typical
+              rocket company. Nope. Next thing I knew, I was strapped to the
+              back of Dragon, clutching a saddle as we blasted through the
+              atmosphere. It was terrifying. It was exhilarating But hey, if you
+              can handle the smell and the occasional fire hiccup, it's the most
+              magical way to see the stars! Just don't make eye contact with the
+              dragon. Trust me on this one.
+              <span
+                class="absolute bottom-[.125rem] right-[1.5rem] scale-[3] text-orange-500 opacity-80"
+                >❞</span
+              >
+            </p>
+            <h3 class="mt-2 text-right text-xs font-bold">
+              — Fearless Fred, dragon enthusiast
+            </h3>
+          </article>
+        </div>
       </section>
       <hr class="mx-auto w-3/4" />
 
