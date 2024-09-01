@@ -13,14 +13,11 @@
       <section
         class="mx-auto flex max-w-screen-lg items-center justify-between p-4"
       >
-        <h1 class="text-2xl font-medium sm:text-4xl">
+        <h1 class="text-2xl font-medium">
           <a href="#hero">Dragon Rockets</a>
         </h1>
         <div>
-          <button
-            id="mobile-open-button"
-            class="text-2xl sm:hidden sm:text-4xl"
-          >
+          <button id="mobile-open-button" class="text-2xl sm:hidden">
             &#9776;
           </button>
           <nav class="hidden text-xl sm:flex sm:gap-8">
@@ -34,14 +31,14 @@
     <main class="mx-auto max-w-screen-lg">
       <section
         id="hero"
-        class="mb-12 flex scroll-m-20 flex-col gap-8 p-4 text-center sm:mt-8 sm:flex-row-reverse sm:text-start"
+        class="wideScreen:section-min-height mb-12 flex scroll-m-20 flex-col gap-8 p-4 text-center sm:mt-8 sm:flex-row-reverse sm:text-start"
       >
         <img
           src="/public/Dragon-Hero.png"
           alt="Dragon on rocket"
-          class="m-4 rounded-2xl bg-gray-700 sm:w-1/2 sm:bg-inherit"
+          class="flex-0 m-4 rounded-2xl bg-gray-700 object-contain sm:w-1/2 sm:self-start sm:bg-inherit"
         />
-        <article class="flex flex-col gap-8 sm:w-1/2">
+        <article class="mt-20 flex flex-col gap-8 sm:w-1/2">
           <h1
             class="text-4xl font-bold leading-tight sm:text-5xl sm:leading-tight"
           >
@@ -110,7 +107,7 @@
       </section>
       <hr class="mx-auto w-3/4" />
 
-      <section id="testimonials" class="my-12 p-6">
+      <section id="testimonials" class="my-12 scroll-mt-20 p-6">
         <h2 class="mb-12 text-center text-3xl font-bold sm:text-4xl">
           ⭐ Testimonials ⭐
         </h2>
@@ -187,11 +184,41 @@
 
       <section id="contact" class="my-12 p-6">
         <h2 class="mb-12 text-center text-3xl font-bold sm:text-4xl">
-          Contact Us
+          📝 Contact Us 📝
         </h2>
+        <form action="">
+          <label for="subject" class="block">Subject</label>
+          <input
+            type="text"
+            placeholder="Your subject"
+            name=""
+            id="subject"
+            class="mt-1 w-full rounded-md p-2 text-gray-800"
+          />
+          <label for="message" class="mt-8 block">Message</label>
+          <textarea
+            name=""
+            id="message"
+            placeholder="Type your message here...."
+            class="mt-1 h-[18.75rem] w-full rounded-md p-2 text-gray-800"
+          ></textarea>
+          <button
+            type="submit"
+            class="text-bold mt-4 rounded-2xl border-none bg-orange-600 px-8 py-3 text-gray-100 hover:opacity-80"
+          >
+            Submit
+          </button>
+        </form>
       </section>
-      <hr class="mx-auto w-3/4" />
     </main>
+    <footer
+      class="grid h-20 w-full place-content-center bg-orange-700 text-gray-200"
+    >
+      <h2 class="text-center text-xl font-bold capitalize sm:text-2xl">
+        Dragons owned the <span class="text-sky-400">skies</span> and now the
+        <span class="text-gray-700">space</span>
+      </h2>
+    </footer>
     <script src="src/scripts.ts"></script>
   </body>
 </html>
