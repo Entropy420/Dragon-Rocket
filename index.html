@@ -11,27 +11,58 @@
       class="sticky top-0 z-10 bg-orange-700 text-slate-200 shadow-lg shadow-gray-900"
     >
       <section
-        class="mx-auto flex max-w-screen-lg items-center justify-between p-4"
+        class="relative mx-auto flex max-w-screen-lg items-center justify-between p-4"
       >
         <h1 class="text-2xl font-medium">
           <a href="#hero">Dragon Rockets</a>
         </h1>
-        <div>
-          <button id="mobile-open-button" class="text-2xl sm:hidden">
-            &#9776;
-          </button>
-          <nav class="hidden text-xl sm:flex sm:gap-8">
-            <a href="#rockets" class="hover:opacity-85">Our Rockets</a>
-            <a href="#testimonials" class="hover:opacity-85">Testimonials</a>
-            <a href="#contact" class="hover:opacity-85">Contact us</a>
-          </nav>
+        <button id="ham-button" class="text-2xl sm:hidden">&#9776;</button>
+
+        <div
+          class="absolute left-0 top-[64px] h-screen w-screen bg-gray-800 sm:hidden"
+        >
+          <ul class="mt-6 flex h-3/5 flex-col text-3xl">
+            <li class="grid flex-grow place-content-center">
+              <a
+                href="#hero"
+                class="inline-block rounded-xl bg-orange-500 px-6 py-4 font-bold text-gray-800"
+                >Home</a
+              >
+            </li>
+            <li class="grid flex-grow place-content-center">
+              <a
+                href="#rockets"
+                class="inline-block rounded-xl bg-orange-500 px-6 py-4 font-bold text-gray-800"
+                >Our Rockets</a
+              >
+            </li>
+            <li class="grid flex-grow place-content-center">
+              <a
+                href="#testimonials"
+                class="inline-block rounded-xl bg-orange-500 px-6 py-4 font-bold text-gray-800"
+                >Testimonials</a
+              >
+            </li>
+            <li class="grid flex-grow place-content-center">
+              <a
+                href="#contact"
+                class="inline-block rounded-xl bg-orange-500 px-6 py-4 font-bold text-gray-800"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
         </div>
+        <nav class="hidden text-xl sm:flex sm:gap-8">
+          <a href="#rockets" class="hover:opacity-85">Our Rockets</a>
+          <a href="#testimonials" class="hover:opacity-85">Testimonials</a>
+          <a href="#contact" class="hover:opacity-85">Contact us</a>
+        </nav>
       </section>
     </header>
     <main class="mx-auto max-w-screen-lg">
       <section
         id="hero"
-        class="wideScreen:section-min-height mb-12 flex scroll-m-20 flex-col gap-8 p-4 text-center sm:mt-8 sm:flex-row-reverse sm:text-start"
+        class="wideScreen:section-min-height mb-12 flex scroll-m-20 flex-col gap-8 p-6 text-center sm:mt-8 sm:flex-row-reverse sm:text-start"
       >
         <img
           src="/public/Dragon-Hero.png"
